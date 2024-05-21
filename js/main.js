@@ -1,3 +1,8 @@
+// Restart game
+document.querySelector("#restart").addEventListener("click", function(){
+    location.reload();
+});
+
 // change site brightness
 document.querySelector("#brightness").addEventListener("click", function(){
     document.querySelector("body").classList.toggle("black");
