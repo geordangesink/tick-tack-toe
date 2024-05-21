@@ -27,6 +27,14 @@ body {
   align-items: center;
 }
 
+h1{
+  margin-bottom: 0px;
+}
+
+#version{
+  margin: 0px;
+}
+
 #game{
   margin-top: 50px;
   width: 650px;
@@ -45,13 +53,27 @@ body {
 }
 
 .field{
-  border: 5px solid black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 5px solid rgb(190, 190, 190);
   width: 200px;
   height: 200px;
   margin: 0;
   padding: 0;
 }
 
+#restart{
+  margin-top: 10px;
+}
+
+.field.black, .black{
+  background-color: rgb(14, 14, 14);
+  filter: invert(100%);
+}
+
+.hide{
+  display: none;
+}
 
 /******************************************
 /* LAYOUT
@@ -67,3 +89,22 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 800px) {
+
+  #game{
+    margin-top: 20px;
+    width: 300px;
+  }
+  
+  .row{
+    width: 300px;
+  }
+  
+  .field{
+    border: 1px solid rgb(190, 190, 190);
+    width: 100px;
+    height: 100px;
+  }
+  
+}

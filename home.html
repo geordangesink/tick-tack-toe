@@ -12,25 +12,31 @@
 	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<h1>Which Pokémon?</h1>
+	<body class="black">
+		<section>
+			<button id="brightness">Dark/Light</button>
+		</section>
+		<h1>Tick-Tack-Toe</h1>
+		<p id="version">(version 1.0)</p>
+		<h2 id="winner"></h2>
 		<section id="game">
 			<section class="row" id="first-row">
-				<img id="field-1" class="first-column field" src="" alt="">
-				<img id="field-2" class="second-column field" src="" alt="">
-				<img id="field-3" class="third-column field" src="" alt="">
+				<section id="field-1" class="first-column field black"></section>
+				<section id="field-2" class="second-column field black"></section>
+				<section id="field-3" class="third-column field black"></section>
 			</section>
 			<section class="row" id="second-row">
-				<img id="field-4" class="first-column field" src="" alt="">
-				<img id="field-5" class="second-column field" src="" alt="">
-				<img id="field-6" class="third-column field" src="" alt="">
+				<section id="field-4" class="first-column field black"></section>
+				<section id="field-5" class="second-column field black"></section>
+				<section id="field-6" class="third-column field black"></section>
 			</section>
 			<section class="row" id="third-row">
-				<img id="field-7" class="first-column field" src="" alt="">
-				<img id="field-8" class="second-column field" src="" alt="">
-				<img id="field-9" class="third-column field" src="" alt="">
+				<section id="field-7" class="first-column field black"></section>
+				<section id="field-8" class="second-column field black"></section>
+				<section id="field-9" class="third-column field black"></section>
 			</section>
 		</section>
+		<input type="submit" value="Restart" id="restart" class="hide">
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
